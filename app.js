@@ -10,8 +10,8 @@ const list = require('./Router/list.route');
 
 
 
-app.use(cors('dev'))
-app.use(express.json())
+app.use(cors());
+app.use(express.json());
 
 app.use("/v1", user);
 app.use("/v2",Authenticate, list);
